@@ -1,0 +1,5 @@
+package com.springcloud.main.service;
+
+public class ProductService {
+
+}

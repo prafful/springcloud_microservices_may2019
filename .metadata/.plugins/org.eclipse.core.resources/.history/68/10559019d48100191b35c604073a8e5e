@@ -1,0 +1,12 @@
+package com.springcloud.main.entity;
+
+import javax.persistence.Entity;
+
+@Entity
+public class ProductEntity {
+	
+	
+	
+	
+
+}

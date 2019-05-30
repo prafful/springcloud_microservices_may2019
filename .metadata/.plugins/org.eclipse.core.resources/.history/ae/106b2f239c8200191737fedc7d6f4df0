@@ -1,0 +1,10 @@
+package com.springcloud.main.entity;
+
+public class InventoryEntity {
+	
+	private Long id;
+	
+	
+	
+	
+}

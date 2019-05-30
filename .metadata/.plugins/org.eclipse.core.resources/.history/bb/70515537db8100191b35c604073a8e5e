@@ -1,0 +1,5 @@
+package com.springcloud.main.repository;
+
+public interface ProductRepository {
+
+}

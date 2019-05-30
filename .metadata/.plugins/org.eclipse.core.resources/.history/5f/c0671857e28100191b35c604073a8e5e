@@ -1,0 +1,16 @@
+server:
+  port: 9991
+  
+spring:  h2:    console:      enabled: true
+      path: /h2console
+        datasource:    url: jdbc:h2:~/productmicroservice
+    driver-class-name: org.h2.Driver     username: sa
+    password:   jpa:
+    hibernate:      ddl-auto: update
+    show-sql: true    properties:      hibernate.generate_statistics : true  application:    name: product-microservice
+    
+eureka:  client:    register-with-eureka: true 
+        service-url:      defaultZone: http://${eureka.instance.hostname}:1111
+    
+  instance:
+   hostname: localhost 

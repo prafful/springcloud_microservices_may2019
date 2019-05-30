@@ -1,0 +1,5 @@
+package com.springcloud.main.entity;
+
+public class ProductEntity {
+
+}

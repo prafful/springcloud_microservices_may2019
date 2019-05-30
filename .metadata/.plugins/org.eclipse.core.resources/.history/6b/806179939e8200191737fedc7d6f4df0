@@ -1,0 +1,15 @@
+package com.springcloud.main.service;
+
+import com.springcloud.main.restcontroller.List;
+
+public class InventoryService {
+	
+	@autowired
+	private InventoryDao inventoryDao;
+
+	public List getAllInventory() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

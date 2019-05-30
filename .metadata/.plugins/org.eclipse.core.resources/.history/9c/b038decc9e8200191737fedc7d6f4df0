@@ -1,0 +1,15 @@
+package com.springcloud.main.dao;
+
+import java.util.List;
+
+public class InventoryDao {
+	
+	@Autowired
+	private InventoryRepository inventoryRepository;
+
+	public List getAllInventory() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

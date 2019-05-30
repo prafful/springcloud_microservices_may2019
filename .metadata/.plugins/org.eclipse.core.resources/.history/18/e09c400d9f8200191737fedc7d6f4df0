@@ -1,0 +1,20 @@
+package com.springcloud.main.entity;
+
+import javax.persistence.Entity;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Entity
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class InventoryEntity {
+	
+	private Long id;
+	
+	private String productCode;
+	
+	private Integer quantity;
+}

@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: 001_Product_Microservice
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: praff
+Implementation-Vendor-Id: 001_Product_Microservice
+Build-Jdk: 1.8.0_211
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/001_Product_Microservice
+Created-By: Maven Integration for Eclipse
+

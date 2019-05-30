@@ -1,0 +1,6 @@
+server.port = 8080
+zuul.prefix = /shop
+zuul.ignored-services=*
+
+zuul.routes.products_ms.path=/product/**
+zuul.routes.products_ms.service-id=product-microservice

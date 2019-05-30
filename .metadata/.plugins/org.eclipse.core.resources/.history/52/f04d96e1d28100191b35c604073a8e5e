@@ -1,0 +1,12 @@
+package com.springcloud.main.restcontroller;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class ProductController {
+	
+	public String welcome() {
+		return "Welcome to product microservice!";
+	}
+
+}

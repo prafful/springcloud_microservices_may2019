@@ -1,0 +1,6 @@
+server:
+  port: 9991
+  
+spring:  h2:    console:      enabled: true
+      path: /h2console
+        datasource:    url: jdbc:h2:~/productmicroservice  

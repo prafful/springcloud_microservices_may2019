@@ -1,0 +1,9 @@
+server.port=9992
+spring.application.name=inventory-microservice
+eureka.client.fetch-registry=true
+eureka.client.register-with-eureka=true
+eureka.client.service-url.defaultZone=http://localhost:1111/eureka
+
+spring.h2.console.enabled=true
+spring.h2.console.url=/h2
+spring.datasource.url=

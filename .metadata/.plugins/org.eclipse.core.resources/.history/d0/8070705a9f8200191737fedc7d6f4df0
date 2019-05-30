@@ -1,0 +1,20 @@
+package com.springcloud.main.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.springcloud.main.dao.InventoryDao;
+
+
+public class InventoryService {
+	
+	@Autowired
+	private InventoryDao inventoryDao;
+
+	public List getAllInventory() {
+		// TODO Auto-generated method stub
+		return inventoryDao.getAllInventory();
+	}
+
+}

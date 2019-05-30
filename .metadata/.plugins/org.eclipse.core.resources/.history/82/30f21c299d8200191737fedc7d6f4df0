@@ -1,0 +1,12 @@
+package com.springcloud.main.restcontroller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+
+public class InventoryController {
+	
+	@RequestMapping("/")
+	public String welcome() {
+		return "Hello from Inventory Microservice!!!!";
+	}
+
+}

@@ -1,0 +1,13 @@
+package com.springcloud.main.entity;
+
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
+@Entity
+public class InventoryEntity {
+	
+	private Long id;
+	
+	private String productCode;
+	
+	private Integer quantity;
+}

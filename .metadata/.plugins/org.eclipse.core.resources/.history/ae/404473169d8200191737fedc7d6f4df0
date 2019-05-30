@@ -1,0 +1,9 @@
+package com.springcloud.main.restcontroller;
+
+public class InventoryController {
+	
+	public String welcome() {
+		
+	}
+
+}

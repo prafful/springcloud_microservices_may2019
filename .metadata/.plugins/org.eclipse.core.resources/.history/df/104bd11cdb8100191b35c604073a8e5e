@@ -1,0 +1,19 @@
+package com.springcloud.main.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.springcloud.main.dao.ProductDao;
+
+public class ProductService {
+
+	@Autowired
+	private ProductDao productDao;
+	
+	public List getAllProducts() {
+		// TODO Auto-generated method stub
+		return productDao.getAllProducts()
+	}
+
+}
