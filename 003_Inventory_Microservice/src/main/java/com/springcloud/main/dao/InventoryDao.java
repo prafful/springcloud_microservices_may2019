@@ -25,4 +25,9 @@ public class InventoryDao {
 		return inventoryRepository.findAll();
 	}
 
+	public InventoryEntity getInventoryByProductCode(String productCode) {
+		// TODO Auto-generated method stub
+		return inventoryRepository.findByProductCode(productCode);
+	}
+
 }

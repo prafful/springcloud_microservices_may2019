@@ -3,6 +3,8 @@ package com.springcloud.main.restcontroller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -30,14 +32,13 @@ public class InventoryController {
 	@PostMapping("/add")
 	public List addInventory(@RequestBody InventoryEntity ie) {
 		return inventoryService.addInventory(ie);
-		
 	}
 	
 	
-	/*
-	 * public Inventory getInventoryByProductCode() {
-	 * 
-	 * }
-	 */
+	  @GetMapping("/{code}")	
+	  public InventoryEntity getInventoryByProductCode(@PathVariable("code") String productCode) {
+		  return inventoryService.getInventoryByProductCode(productCode);
+	  }
+	 
 
 }
