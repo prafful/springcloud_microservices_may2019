@@ -3,6 +3,7 @@ package com.springcloud.main.restcontroller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -15,14 +16,19 @@ import com.springcloud.main.entity.ProductEntity;
 import com.springcloud.main.service.ProductService;
 
 @RestController
+@RefreshScope
 public class ProductController {
 	
 	@Autowired
 	private ProductService productService;
 	
+	@Value("${welcome.message}")
+	private String message;
+	
+
 	@RequestMapping("/")
 	public String welcome() {
-		return "Welcome to product microservice!";
+		return message;
 	}
 
 	@RequestMapping("/all")
@@ -34,12 +40,11 @@ public class ProductController {
 	public List addProduct(@RequestBody ProductEntity product) {
 		return productService.addProduct(product);
 	}
+
 	//http://localhost:9991/P002
 	//http://localhost:9991/P001
 	@RequestMapping("/{code}")   
 	public ProductEntity getProductByCode(@PathVariable String code) {
 		return productService.getProductByCode(code);
 	}
-	
-	
 }
